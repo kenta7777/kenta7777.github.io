@@ -7,27 +7,6 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <h1> Kenta7777's Portfolio </h1>
-
-        <h2> About Me </h2>
-        <p>I'm Kenta7777, software engineer(work on Android Application Development at present).</p>
-
-        <h2> My Works </h2>
-        <p>TODO</p>
-
-        <h2> Main Interests </h2>
-        <ul> 
-            <li> Rust </li>
-            <li> Type System </li>
-            <li> Compiler </li>
-            <li> Operating System </li>
-        </ul>
-
-        <h2> Links </h2>
-        <ul> 
-            <li> <a href="https://github.com/kenta7777">GitHub</a> </li> 
-            <li> <a href="https://qiita.com/kenta7777">Qiita</a> </li>
-        </ul>
   </React.StrictMode>,
   document.getElementById('root')
 );
