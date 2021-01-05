@@ -8,7 +8,7 @@ function App() {
         <h1> Kenta7777's Portfolio </h1>
 
         <h2> About Me </h2>
-        <p>I'm Kenta7777, software engineer(work on Android Application Development at present).</p>
+        <p>I'm Kenta7777, newbie software engineer.</p>
 
         <h2> My Works </h2>
         <p>TODO</p>
