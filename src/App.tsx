@@ -1,4 +1,5 @@
 import React from 'react';
+import github_image from './github-mark.png';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
 
         <h2> About Me </h2>
         <p>I'm Kenta7777, newbie software engineer.</p>
+        <p> <a href="https://github.com/kenta7777"> <img src={github_image} alt="GitHub"></img> </a> </p>
 
         <h2> My Works </h2>
         <p>TODO</p>
@@ -19,12 +21,6 @@ function App() {
             <li> Type System </li>
             <li> Compiler </li>
             <li> Operating System </li>
-        </ul>
-
-        <h2> Links </h2>
-        <ul> 
-            <li> <a href="https://github.com/kenta7777">GitHub</a> </li> 
-            <li> <a href="https://qiita.com/kenta7777">Qiita</a> </li>
         </ul>
       </header>
     </div>
