@@ -1,18 +1,20 @@
-# How to build & run on local
+# kenta7777.github.io
+
+## How to build & run on local
 
 ```sh
-$ npm install
-$ npm run build
-$ serve -s build
+> npm install
+> npm run build
+> serve -s build
 ```
 
-# How to deploy on GitHub Pages
+## How to deploy on GitHub Pages
 
 ```sh
-$ npm run deploy
+> npm run deploy
 ```
 
-# Features I want to implement
+## Features I want to implement
 
 - Simple markdown editor
 - Simple blog
