@@ -2,29 +2,43 @@ import React from 'react';
 import github_image from './github-mark.png';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1> Kenta7777's Portfolio </h1>
+class App extends React.Component {
+    render() {
+        return (
+            <div className="App">
+              <header className="App-header">
+                <h1> Kenta7777's Portfolio </h1>
+        
+                <Header2 name="About Me"/>
+                <p>I'm Kenta7777, newbie software engineer.</p>
+                <p> <a href="https://github.com/kenta7777"> <img src={github_image} alt="GitHub"></img> </a> </p>
+        
+                <Header2 name="Main Interests"/>
+                <ul> 
+                    <MainInterestsItem name="Rust"/>
+                    <MainInterestsItem name="Type System"/>
+                    <MainInterestsItem name="Compiler"/>
+                </ul>
+              </header>
+            </div>
+        );
+    }
+}
 
-        <h2> About Me </h2>
-        <p>I'm Kenta7777, newbie software engineer.</p>
-        <p> <a href="https://github.com/kenta7777"> <img src={github_image} alt="GitHub"></img> </a> </p>
+type Props = {
+    name: String
+}
 
-        <h2> My Works </h2>
-        <p>TODO</p>
+const MainInterestsItem: React.FC<Props> = props => {
+    return (
+        <li>{props.name}</li>
+    )
+}
 
-        <h2> Main Interests </h2>
-        <ul> 
-            <li> Rust </li>
-            <li> Type System </li>
-            <li> Compiler </li>
-            <li> Operating System </li>
-        </ul>
-      </header>
-    </div>
-  );
+const Header2: React.FC<Props> = props => {
+    return (
+        <h2>{props.name}</h2>
+    )
 }
 
 export default App;
