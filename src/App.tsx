@@ -1,42 +1,24 @@
 import React from 'react';
 import github_image from './github-mark.png';
 import './App.css';
+import MainInterests from './Components/MainInterests';
 
 const App = () => {
+    const MainInterestsNames = ["Rust", "TypeSystem", "Compiler"];
     return (
         <div className="App">
             <header className="App-header">
             <h1> Kenta7777's Portfolio </h1>
     
-            <Header2 name="About Me"/>
+            <h2>About Me</h2>
             <p>I'm Kenta7777, newbie software engineer.</p>
             <p> <a href="https://github.com/kenta7777"> <img src={github_image} alt="GitHub"></img> </a> </p>
     
-            <Header2 name="Main Interests"/>
-            <ul> 
-                <MainInterestsItem name="Rust"/>
-                <MainInterestsItem name="Type System"/>
-                <MainInterestsItem name="Compiler"/>
-            </ul>
+            <h2>Main Interests</h2>
+            <MainInterests names={MainInterestsNames} />
             </header>
-        </div>       
+        </div>
     );
-}
-
-type Props = {
-    name: String
-}
-
-const MainInterestsItem: React.FC<Props> = props => {
-    return (
-        <li>{props.name}</li>
-    )
-}
-
-const Header2: React.FC<Props> = props => {
-    return (
-        <h2>{props.name}</h2>
-    )
 }
 
 export default App;
