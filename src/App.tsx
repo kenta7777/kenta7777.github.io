@@ -1,8 +1,10 @@
 import React from 'react';
 import github_image from './github-mark.png';
 import './App.css';
+import MainInterests from './Components/MainInterests';
 
 const App = () => {
+    const MainInterestsNames = ["Rust", "TypeSystem", "Compiler"];
     return (
         <div className="App">
             <header className="App-header">
@@ -13,24 +15,14 @@ const App = () => {
             <p> <a href="https://github.com/kenta7777"> <img src={github_image} alt="GitHub"></img> </a> </p>
     
             <Header2 name="Main Interests"/>
-            <ul> 
-                <MainInterestsItem name="Rust"/>
-                <MainInterestsItem name="Type System"/>
-                <MainInterestsItem name="Compiler"/>
-            </ul>
+            <MainInterests names={MainInterestsNames} />
             </header>
-        </div>       
+        </div>
     );
 }
 
 type Props = {
     name: String
-}
-
-const MainInterestsItem: React.FC<Props> = props => {
-    return (
-        <li>{props.name}</li>
-    )
 }
 
 const Header2: React.FC<Props> = props => {
