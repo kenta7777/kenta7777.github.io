@@ -5,10 +5,6 @@ import Home from './Pages/Home';
 import Blog from './Pages/Blog';
 
 const App = () => {
-    var md = require('markdown-it')();
-    var emoji = require('markdown-it-emoji');
-    md.use(emoji);
-    
     return (
         <BrowserRouter>
             <Routes>
