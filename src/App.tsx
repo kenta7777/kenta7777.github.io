@@ -6,7 +6,7 @@ import MainInterests from './Components/MainInterests';
 const App = () => {
     const MainInterestsNames = ["Rust", "TypeSystem", "Compiler"];
     return (
-        <div className="App">
+        <div>
             <header className="App-header">
             <h1> Kenta7777's Portfolio </h1>
     
