@@ -31,4 +31,9 @@ p, li {
   font-size: 30px;    
   line-height: 2;
   letter-spacing: 1px;
+  margin: 20px;
+}
+
+.link-box {
+  display: flex;
 }
