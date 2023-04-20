@@ -1,4 +1,4 @@
-.home-page {
+.blog-page {
     background-color: green;
     min-height: 100vh;
     display: flex;
@@ -7,8 +7,4 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-}
-
-.link-box {
-    display: flex;
 }

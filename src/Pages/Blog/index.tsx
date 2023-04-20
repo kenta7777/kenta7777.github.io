@@ -1,6 +1,10 @@
+import './index.css';
+
 const Blog = () => {
     return (
-        <div>Blog</div>
+        <div className="blog-page">
+            <h1> Blog </h1>
+        </div>
     )
 };
 
