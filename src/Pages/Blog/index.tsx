@@ -12,7 +12,9 @@ const Blog = () => {
     const md = markdownit();
     const emoji = require('markdown-it-emoji');
     const prism = require('markdown-it-prism');
-    md.use(emoji).use(prism);
+    const mark = require('markdown-it-mark');
+    const footnote = require('markdown-it-footnote');
+    md.use(emoji).use(prism).use(mark).use(footnote);
 
     return (
         <div className="page">
