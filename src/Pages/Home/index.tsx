@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import MainInterests from "../../Components/MainInterests";
-import github_image from '../../github-mark.png';
+import github_image from '../../Assets/github-mark.png';
 import './index.css';
 
 const Home = () => {
