@@ -12,15 +12,20 @@ const BlogContent = ({resourcePath}: Props) => {
     });
 
     const md = markdownit();
+    initMarkdownit(md);
+    const renderedMarkdownStr = md.render(blogContent);
+
+    return (
+        <div dangerouslySetInnerHTML={{__html: renderedMarkdownStr}}/>
+    );
+};
+
+const initMarkdownit = (md: markdownit) => {
     const emoji = require('markdown-it-emoji');
     const prism = require('markdown-it-prism');
     const mark = require('markdown-it-mark');
     const footnote = require('markdown-it-footnote');
     md.use(emoji).use(prism).use(mark).use(footnote);
-
-    return (
-        <div dangerouslySetInnerHTML={{__html: md.render(blogContent)}}/>
-    );
 };
 
 export default BlogContent;
