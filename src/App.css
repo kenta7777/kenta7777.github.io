@@ -1,4 +1,22 @@
-h1 {
+p, li {
+  font-size: 30px;    
+  line-height: 2;
+  letter-spacing: 1px;
+  margin: 20px;
+}
+
+.page {
+  background-color: green;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.page-title {
   font-size: 70px;
   text-align: center;
   padding: 8px 19px;
@@ -7,14 +25,7 @@ h1 {
   border-bottom: solid 5px white;
 }
 
-h2 {
+.page-item {
   font-size: 50px;
   letter-spacing: 1px;
-}
-
-p, li {
-  font-size: 30px;    
-  line-height: 2;
-  letter-spacing: 1px;
-  margin: 20px;
 }
