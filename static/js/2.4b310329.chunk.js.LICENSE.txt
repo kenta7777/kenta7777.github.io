@@ -4,6 +4,8 @@ object-assign
 @license MIT
 */
 
+/*! https://mths.be/punycode v1.4.1 by @mathias */
+
 /**
  * @remix-run/router v1.5.0
  *
@@ -13,6 +15,15 @@ object-assign
  * LICENSE.md file in the root directory of this source tree.
  *
  * @license MIT
+ */
+
+/**
+ * Prism: Lightweight, robust, elegant syntax highlighting
+ *
+ * @license MIT <https://opensource.org/licenses/MIT>
+ * @author Lea Verou <https://lea.verou.me>
+ * @namespace
+ * @public
  */
 
 /**
