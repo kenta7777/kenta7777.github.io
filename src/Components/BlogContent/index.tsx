@@ -1,5 +1,7 @@
 import markdownit from 'markdown-it';
 import { useEffect, useState } from "react";
+import matter from 'gray-matter';
+import './index.css';
 
 type Props = {
     resourcePath: string;
@@ -11,12 +13,18 @@ const BlogContent = ({resourcePath}: Props) => {
         fetch(resourcePath).then(res => res.text()).then(text => setBlogContent(text))
     });
 
+    // split metadata and body of blog from markdown resource
+    const {data: {title, date}, content} = matter(blogContent);
     const md = markdownit();
     initMarkdownit(md);
-    const renderedMarkdownStr = md.render(blogContent);
+    const renderedMarkdownStr = md.render(content);
 
     return (
-        <div dangerouslySetInnerHTML={{__html: renderedMarkdownStr}}/>
+        <div>
+            <div className="blog-title">{title}</div>
+            <div className="blog-date">{date}</div>
+            <div dangerouslySetInnerHTML={{__html: renderedMarkdownStr}}/>
+        </div>
     );
 };
 
