@@ -1,3 +1,8 @@
+---
+title: sample blog title
+date: 2023/04/01
+---
+
 # h1 Heading 8-)
 
 ## h2 Heading
